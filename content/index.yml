@@ -1,0 +1,234 @@
+title: AI + Human Support, Seamlessly Connected.
+description: Handoff Chat is an AI-first customer service platform that bridges the gap between automated LLM responses and human agent intervention. Connect your channels to your favorite AI agent, with seamless human escalation.
+seo:
+  title: Smart Inbox for Businesses - AI + Human Customer Messaging
+  description: Boost customer support efficiency with an omni‑channel AI inbox. Unify all communication channels, automate LLM responses, and route to human agents seamlessly.
+navigation: false
+hero:
+  links:
+    - label: Use for FREE
+      icon: i-lucide-rocket
+      to: https://app.handoff.chat
+      target: _blank
+      size: xl
+      class: bg-gradient-to-r from-sky-700 via-purple-600 to-red-600 dark:from-sky-500 dark:via-purple-500 dark:to-red-500 p-3 group text-white dark:text-white rounded-full
+sections:
+  - title: Simplify omnichannel messaging with AI + human support
+    description: Your customers reach out across multiple channels — Handoff Chat unifies them so you don't have to juggle tabs.
+    id: features
+    orientation: horizontal
+    image:
+      light: /images/bot-and-human-chat-1.png
+      dark: /images/bot-and-human-chat-1.png
+    imageRadiantBg: true
+    features:
+      - name: Smart Inbox
+        description: Unify conversations from WhatsApp, Instagram, Messenger, Telegram and Text/SMS into one smart inbox.
+        icon: i-lucide-inbox
+      - name: AI Agent
+        description: Auto reply to your customers using your favorite LLM AI agent.
+        icon: i-lucide-bot
+      - name: Human Agent
+        description: Seamless human escalation when conversations need a personal touch.
+        icon: i-lucide-user
+features:
+  title: Everything You Need for AI-First Customer Support
+  description: Enjoy the freedom to tailor automation to your brand’s voice, adapt to evolving customer needs, and switch providers without being locked in.
+  items:
+    - title: Supported Integrations
+      description: Seamlessly integrate WhatsApp Business, Facebook Messenger, Instagram DM, Twilio SMS, and more into a single inbox.
+      icon: i-lucide-mailbox
+    - title: AI Auto‑Replies
+      description: Connect your preferred LLM agent to instantly respond to customer queries with context‑aware answers.
+      icon: i-lucide-bot-message-square
+    - title: Smart Human Escalation
+      description: Switch from AI to human replies effortlessly when conversations need a personal touch.
+      icon: i-lucide-user-check
+    - title: Unified Dashboard
+      description: Manage all customer interactions in one place — no more tab‑hopping.
+      icon: i-lucide-layout-dashboard
+    - title: Efficiency & Control
+      description: Automate repetitive tasks while keeping full visibility and control over every conversation.
+      icon: i-lucide-tower-control
+    - title: Flexibility
+      description: Connect the communication channels your customers already use and pair them with the AI model you trust most.
+      icon: i-lucide-waves
+benefits:
+  title: Smarter Support, Built for Growth
+  description: Delivering great customer experiences shouldn’t mean burning out your team. With our omni‑channel AI inbox, you get the perfect balance of automation and human care — saving time, delighting customers, and scaling support without compromise.
+  items:
+    - title: Save time by automating routine replies
+      description: Let AI handle FAQs and repetitive questions instantly, freeing your team to focus on complex issues.
+      icon: i-lucide-clock
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Delight customers with instant, accurate responses
+      description: Provide fast, context‑aware answers across WhatsApp, Messenger, Instagram, and more.
+      icon: i-lucide-zap
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Maintain trust with smooth human handoff when needed
+      description: Escalate seamlessly to a human agent for sensitive or high‑value conversations.
+      icon: i-lucide-handshake
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+    - title: Scale your support without scaling your stress
+      description: Grow your business confidently with a system designed to handle more conversations effortlessly.
+      icon: i-lucide-trending-up
+      ui:
+        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+steps:
+  title: Your Inbox in [3 Simple Steps]{.text-primary}
+  description: Getting started is effortless. In just a few minutes, you’ll unify your channels, empower AI, and keep human care at the center of every conversation.
+  items:
+    - title: Connect Your Channels
+      description: Bring WhatsApp, Messenger, Instagram, and more into one unified inbox — no more juggling tabs.
+      image:
+        light: '/images/connect.png'
+        dark: '/images/connect.png'
+    - title: Link Your AI Agent
+      description: Plug in the LLM AI agent you trust most to automate routine replies, tailored to your brand’s voice.
+      image:
+        light: '/images/ai-agent.png'
+        dark: '/images/ai-agent.png'
+    - title: Manage Conversations Seamlessly
+      description: Let AI handle the everyday questions, and step in manually when a human touch is needed.
+      image:
+        light: '/images/hybrid-chat.png'
+        dark: '/images/hybrid-chat.png'
+# testimonials:
+#   headline: Trusted by Developers
+#   title: Join Thousands Building with Nuxt UI
+#   description: See why developers choose Nuxt UI to ship their SaaS applications faster and with more confidence.
+#   items:
+#     - quote: Nuxt UI transformed how we build. The component quality is exceptional - everything just works with perfect TypeScript support, accessibility, and dark mode built in.
+#       user:
+#         name: Sarah Chen
+#         description: CTO at TechScale Solutions
+#         avatar:
+#           src: https://i.pravatar.cc/120?img=1
+#     - quote: We shipped our MVP in 2 weeks instead of 2 months. The authentication flows and form components saved us countless hours of development time.
+#       user:
+#         name: Marcus Rodriguez
+#         description: VP of Engineering at DataFlow
+#         avatar:
+#           src: https://i.pravatar.cc/120?img=7
+#     - quote: The design system with AppConfig is brilliant. We maintain brand consistency across all our products while leveraging the full component library.
+#       user:
+#         name: David Kumar
+#         description: Security Director at SecureStack
+#         avatar:
+#           src: https://i.pravatar.cc/120?img=3
+#     - quote: Perfect Lighthouse scores out of the box. Our Core Web Vitals improved dramatically just by switching to Nuxt UI components.
+#       user:
+#         name: Emily Zhang
+#         description: Lead Architect at ScaleForce
+#         avatar:
+#           src: https://i.pravatar.cc/120?img=5
+#     - quote: The Tailwind Variants system makes customization so intuitive. We can override any component style while keeping the functionality intact.
+#       user:
+#         name: James Wilson
+#         description: DevOps Lead at CloudPro
+#         avatar:
+#           src: https://i.pravatar.cc/120?img=8
+#     - quote: From the SaaS template to production in days. The pre-built layouts, navigation, and content structure accelerated our launch.
+#       user:
+#         name: Lisa Patel
+#         description: CEO at AutoScale
+#         avatar:
+#           src: https://i.pravatar.cc/120?img=9
+#     - quote: Reka UI foundation means accessibility is never an afterthought. We achieved WCAG compliance without any custom work.
+#       user:
+#         name: Michael Torres
+#         description: Frontend Lead at AccessFirst
+#         avatar:
+#           src: https://i.pravatar.cc/120?img=11
+#     - quote: The documentation is outstanding. Every component has clear examples, and the community on Discord is incredibly helpful.
+#       user:
+#         name: Rachel Kim
+#         description: Performance Engineer at APIHub
+#         avatar:
+#           src: https://i.pravatar.cc/120?img=10
+#     - quote: We replaced three different UI libraries with Nuxt UI. The consistency and quality across all components is unmatched.
+#       user:
+#         name: Thomas Weber
+#         description: UI Architecture Lead at DesignScale
+#         avatar:
+#           src: https://i.pravatar.cc/120?img=12
+#     - quote: The integration with Nuxt modules is seamless. Color mode, fonts, icons - everything works together perfectly.
+#       user:
+#         name: Sophia Martinez
+#         description: Integration Specialist at TechFlow
+#         avatar:
+#           src: https://i.pravatar.cc/120?img=14
+
+sections2:
+- title: Embed a White-Label AI Inbox Inside Your App
+  description: Don't just unify your channels—make our inbox yours. With first-class white-label support, you can embed the entire Handoff chat experience natively inside your existing SaaS, portal, or internal tools.
+  id: whitelabel
+  orientation: horizontal
+  reverse: false
+  image:
+    light: /images/whitelabel.png
+    dark: /images/whitelabel.png
+  features:
+    - name: 100% White-Label Ready
+      description: Remove Handoff branding completely. Customize colors, logos, and UI elements to match your brand's native experience.
+      icon: i-lucide-palette
+    - name: Seamless Embedding
+      description: Drop the fully-functional unified inbox directly into your application using our secure embed frame.
+      icon: i-lucide-code
+    - name: Developer-Friendly Integration
+      description: Sync seamlessly with your existing user base and authentication flow so your customers never have to log in twice.
+      icon: i-lucide-braces
+
+- title: Your Inbox, Anytime, Anywhere
+  description: "Whether you’re at your desk or on the go, our app keeps you connected. Access the full power of AI + human support from:"
+  id: devices
+  orientation: horizontal
+  reverse: true
+  image:
+    light: /images/devices.jpg
+    dark: /images/devices.jpg
+  features:
+    - name: Web Browser
+      description: Log in instantly from any modern browser, no installation required.
+      icon: i-lucide-globe
+      to: https://app.handoff.chat
+      target: _blank
+    - name: Desktop App
+      description: Stay productive with a native experience on Windows, Mac and Linux (coming soon).
+      icon: i-lucide-monitor
+    - name: Mobile App
+      description: Manage conversations on the move with iOS and Android support (coming soon).
+      icon: i-lucide-smartphone
+
+faq:
+  title: Frequently Asked Questions
+  items:
+    - label: What exactly is Handoff?
+      content: Handoff is an omnichannel smart inbox designed for businesses. It unifies your customer conversations from various messaging platforms into a single dashboard, allowing you to use AI agents to automate routine replies and seamlessly hand off complex issues to live human agents.
+    - label: Which communication channels can I connect to Handoff?
+      content: You can integrate the messaging platforms your customers already use, including WhatsApp, Facebook Messenger, Instagram DMs, Twilio SMS, and Telegram. All messages from these channels are routed into one centralized unified inbox.
+    - label: Which AI models or agents does Handoff support?
+      content: Handoff gives you the flexibility to connect the AI model you trust most. You can link it to popular LLMs via OpenAI prompts, integrate with tools like Microsoft Copilot Studio, or plug in Claude LLM or your own custom AI agents to handle auto-replies.
+    - label: How does the "human handoff" feature work?
+      content: Our smart logic monitors the conversation. Let the AI handle everyday FAQs and repetitive questions instantly. If a customer explicitly requests a human, or if the conversation requires a personal touch, the system effortlessly escalates the chat to a live human agent right within the same dashboard.
+    - label: Is FREE plan available?
+      content: Yes, Handoff is completely free to use while we are in our BETA phase. Once we transition out of beta, we are committed to offering highly competitive and accessible pricing.
+    - label: Can I use Handoff on my phone?
+      content: Yes! Handoff is built to keep you connected anywhere. You can access your inbox via any modern web browser, our native desktop applications for Windows, Mac, and Linux, or our mobile apps for iOS and Android.
+    - label: Do I need technical skills to set it up?
+      content: Getting started is effortless. In just a few minutes, you can connect your channels, link your preferred AI agent, and start managing your customer conversations seamlessly.
+    - label: Can I embed Handoff inside my own software?
+      content: Yes! Handoff offers first-class white-labeling and embedding support. You can completely remove our branding, customize the colors to match your UI, and embed the full smart inbox experience natively inside your own SaaS application or internal tools.
+
+cta:
+  title: Start with Handoff Chat today!
+  description: The Handoff AI Inbox is free during the BETA phase. We aim to offer the most competitive pricing once out of beta.
+  links:
+    - label: Get Started with the AI Smart Inbox for Free
+      to: https://app.handoff.chat
+      target: _blank
+      icon: lucide:rocket
+      class: bg-gradient-to-r from-sky-700 via-purple-600 to-red-600 dark:from-sky-500 dark:via-purple-500 dark:to-red-500 p-3 group text-white dark:text-white rounded-full
