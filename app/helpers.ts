@@ -19,3 +19,6 @@ export function softwareApplicationLdJson({ name, description }: { name: string,
     'url': 'https://www.handoff.chat/'
   }
 }
+
+// Helper to extract the filename/slug from the Nuxt Content _path
+export const getSlugFromPath = (path: string) => path.split('/').pop() || ''

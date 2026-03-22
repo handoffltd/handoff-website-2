@@ -1,15 +1,51 @@
 <script setup lang="ts">
+import { getSlugFromPath } from '~/helpers'
+
 const route = useRoute()
 
-// Fetch the specific AI agent content based on the URL path
-const { data: page } = await useAsyncData(`agent-${route.path}`, () => {
-  return queryCollection('aiAgents').path(route.path).first()
+// Fetch the specific channel content and agents (for integrations) based on the URL path
+const { data, error } = await useAsyncData(`agent-${route.path}`, async () => {
+  const [page, channels] = await Promise.all([
+    queryCollection('aiAgents').path(route.path).first(),
+    queryCollection('channels').all()
+  ])
+
+  return { page, channels }
 })
 
-// Optional: Handle 404 if agent isn't found
-if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: 'AI Agent not found', fatal: true })
+if (error.value || !data.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Channel not found', fatal: true })
 }
+
+const page = data.value.page
+const channels = data.value.channels || []
+
+if (!page) {
+  throw createError({ statusCode: 404, statusMessage: 'Channel not found', fatal: true })
+}
+
+// Generate all possible combinations
+const integrations = computed(() => {
+  const combos = []
+
+  for (const channel of channels) {
+    const agentSlug = getSlugFromPath(page.path)
+    const channelSlug = getSlugFromPath(channel.path)
+
+    combos.push({
+      id: `${channelSlug}-with-${agentSlug}`,
+      link: `/integrations/${channelSlug}-with-${agentSlug}`,
+      title: `${channel.label} + ${page.label}`,
+      channlIcon: channel.icon,
+      agentIcon: page.icon,
+      channelName: channel.label,
+      agentName: page.label,
+      description: `Use ${page.label}'s ${page.integration.superpower} to automate ${channel.label} and ${channel.integration.actionVerb} ${channel.integration.audienceType}.`
+    })
+  }
+
+  return combos
+})
 
 // Compute the platform slug from the route params to pass into the component
 const pageSlug = computed(() => {
@@ -17,8 +53,8 @@ const pageSlug = computed(() => {
   return Array.isArray(slugParam) ? slugParam[slugParam.length - 1] : slugParam
 })
 
-const title = page.value?.seo?.title || page.value?.title
-const description = page.value?.seo?.description || page.value?.description
+const title = page.seo?.title || page.title
+const description = page.seo?.description || page.description
 
 useSeoMeta({
   title,
@@ -40,11 +76,36 @@ useSeoMeta({
 
     <USeparator />
 
+    <!-- sections -->
     <UPageSection v-for="(section, index) in page.sections" :key="index" :title="section.title"
       :description="section.description">
       <UPageGrid class="lg:grid-cols-2">
         <UPageCard v-for="(item, index2) in page.benefits" :key="index2" :title="item.title"
           :description="item.description" spotlight />
+      </UPageGrid>
+    </UPageSection>
+
+    <USeparator />
+
+    <!-- integrations -->
+    <UPageSection :title="`Connect Your Favorite Communication Channel with ${page.label}`" description="Streamline customer conversations across channels, with AI support and smooth human transitions.">
+      <UPageGrid class="lg:grid-cols-2">
+        <UPageCard v-for="(integration, index) in integrations" :key="index" :title="integration.title"
+          :description="integration.description" :to="integration.link">
+          <template #header>
+            <div class="flex items-center space-x-3">
+              <div
+                class="h-10 w-10 bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center shadow-inner">
+                <UIcon :name="integration.agentIcon" class="w-6 h-6" />
+              </div>
+              <UIcon name="i-lucide-arrow-right-left" class="w-4 h-4 text-gray-400" />
+              <div
+                class="h-10 w-10 bg-primary-50 dark:bg-primary-900/30 text-primary-600 rounded-lg flex items-center justify-center shadow-inner">
+                <UIcon :name="integration.channlIcon" class="w-6 h-6" />
+              </div>
+            </div>
+          </template>
+        </UPageCard>
       </UPageGrid>
     </UPageSection>
 

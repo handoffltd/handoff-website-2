@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { getSlugFromPath } from '~/helpers'
+
 const { data: page } = await useAsyncData('integrations-index', () => queryCollection('integrationsIndex').first())
 
 // Fetch all AI Agents and Channels concurrently
@@ -20,9 +22,6 @@ const channels = data.value.channels || []
 
 const searchQuery = ref('')
 
-// Helper to extract the filename/slug from the Nuxt Content _path
-const getSlugFromPath = (path: string) => path.split('/').pop() || ''
-
 // Generate all possible combinations
 const allCombinations = computed(() => {
   const combos = []
@@ -34,7 +33,7 @@ const allCombinations = computed(() => {
       const agentSlug = getSlugFromPath(agent.path)
 
       combos.push({
-        id: `${agentSlug}-with-${channelSlug}`,
+        id: `${channelSlug}-with-${agentSlug}`,
         link: `/integrations/${channelSlug}-with-${agentSlug}`,
         title: `${channel.label} + ${agent.label}`,
         channlIcon: channel.icon,
