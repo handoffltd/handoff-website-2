@@ -14,7 +14,7 @@
     "@nuxt/ui": "4.3.0",
     "@takumi-rs/core": "^0.73.1",
     "better-sqlite3": "12.5.0",
-    "nuxt": "^4.4.2",
+    "nuxt": "4.2.2",
     "tailwindcss": "^4.2.2"
   },
   "packageManager": "pnpm@10.32.1",
