@@ -19,6 +19,13 @@
       "nuxt",
       "better-sqlite3",
       "sqlite3"
+    ],
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "@tailwindcss/oxide",
+      "esbuild",
+      "unrs-resolver",
+      "vue-demi"
     ]
   }
 }
