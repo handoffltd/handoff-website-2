@@ -1,0 +1,23 @@
+{
+  "name": "handoff-website-2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.12.0",
+    "better-sqlite3": "^12.8.0",
+    "nuxt": "^4.4.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "nuxt",
+      "better-sqlite3",
+      "sqlite3"
+    ]
+  }
+}
