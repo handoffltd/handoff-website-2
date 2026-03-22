@@ -79,10 +79,12 @@ const faqs = customPage.value?.faqs || {
 }
 
 // JSON-LD Schema structured data
-softwareApplicationLdJson({
-  name: `Handoff: ${channel.label} and ${agent.label} Integration`,
-  description: `Integrate ${agent.label} with ${channel.label} using Handoff for AI automation and customer service.`
-})
+useSchemaOrg(
+  softwareApplicationLdJson({
+    name: `Handoff: ${channel.label} and ${agent.label} Integration`,
+    description: `Integrate ${agent.label} with ${channel.label} using Handoff for AI automation and customer service.`
+  })
+)
 
 if (faqs?.items?.length) {
   useSchemaOrg({
