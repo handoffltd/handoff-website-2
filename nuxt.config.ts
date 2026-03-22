@@ -34,14 +34,14 @@ export default defineNuxtConfig({
     experimental: { sqliteConnector: 'better-sqlite3' },
   },
 
-  nitro: {
-    prerender: {
-      routes: [
-        '/'
-      ],
-      crawlLinks: false
-    }
-  },
+  // nitro: {
+  //   prerender: {
+  //     routes: [
+  //       '/'
+  //     ],
+  //     crawlLinks: false
+  //   }
+  // },
 
   site: {
     url: 'https://www.handoff.chat',
