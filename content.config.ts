@@ -1,5 +1,5 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
-// import { asSeoCollection } from '@nuxtjs/seo/content'
+import { asSeoCollection } from '@nuxtjs/seo/content'
 
 const variantEnum = z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link'])
 const colorEnum = z.enum(['primary', 'secondary', 'neutral', 'error', 'warning', 'success', 'info'])
@@ -49,13 +49,13 @@ const createSectionSchema = () => createBaseSchema().extend({
 })
 
 const collections = {
-  // content: defineCollection(
-  //   // adds the robots frontmatter key to the collection
-  //   asSeoCollection({
-  //     type: 'page',
-  //     source: '**/*.md'
-  //   })
-  // ),
+  content: defineCollection(
+    // adds the robots frontmatter key to the collection
+    asSeoCollection({
+      type: 'page',
+      source: '**/*.md'
+    })
+  ),
   index: defineCollection({
     source: 'index.yml',
     type: 'page',

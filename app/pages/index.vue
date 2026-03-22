@@ -14,27 +14,27 @@ useSeoMeta({
   ogDescription: description
 })
 
-// useSchemaOrg(
-//   softwareApplicationLdJson({
-//     name: 'Handoff Chat',
-//     description: 'An omnichannel AI-first customer service inbox that unifies WhatsApp, Messenger, Instagram, Telegram and SMS, featuring seamless human handoff.'
-//   })
-// )
+useSchemaOrg(
+  softwareApplicationLdJson({
+    name: 'Handoff Chat',
+    description: 'An omnichannel AI-first customer service inbox that unifies WhatsApp, Messenger, Instagram, Telegram and SMS, featuring seamless human handoff.'
+  })
+)
 
-// // Dynamically generate the FAQ schema if the data exists in the YAML
-// if (page.value?.faq?.items) {
-//   useSchemaOrg({
-//     '@type': 'FAQPage',
-//     'mainEntity': page.value.faq.items.map(item => ({
-//       '@type': 'Question',
-//       'name': item.label,
-//       'acceptedAnswer': {
-//         '@type': 'Answer',
-//         'text': item.content
-//       }
-//     }))
-//   });
-// }
+// Dynamically generate the FAQ schema if the data exists in the YAML
+if (page.value?.faq?.items) {
+  useSchemaOrg({
+    '@type': 'FAQPage',
+    'mainEntity': page.value.faq.items.map(item => ({
+      '@type': 'Question',
+      'name': item.label,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': item.content
+      }
+    }))
+  });
+}
 </script>
 
 <template>
