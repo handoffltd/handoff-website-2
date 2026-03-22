@@ -20,7 +20,7 @@ function getSlugsFromDirectory(dirPath: string) {
 export default defineNuxtConfig({
   modules: [
     '@nuxt/ui',
-    '@nuxtjs/seo', // Module order is critical. @nuxtjs/seo must come before @nuxt/content in your modules array.
+    // '@nuxtjs/seo', // Module order is critical. @nuxtjs/seo must come before @nuxt/content in your modules array.
     '@nuxt/content'
   ],
 
