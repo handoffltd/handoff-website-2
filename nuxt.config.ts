@@ -48,26 +48,26 @@ export default defineNuxtConfig({
     name: 'Handoff'
   },
 
-  sitemap: {
-    // Dynamically generate the programmatic SEO URLs
-    urls: () => {
-      // Integrations URLs
-      // Read the directories based on your content.config.ts structure
-      const channels = getSlugsFromDirectory('content/channels')
-      const agents = getSlugsFromDirectory('content/ai-agents')
+  // sitemap: {
+  //   // Dynamically generate the programmatic SEO URLs
+  //   urls: () => {
+  //     // Integrations URLs
+  //     // Read the directories based on your content.config.ts structure
+  //     const channels = getSlugsFromDirectory('content/channels')
+  //     const agents = getSlugsFromDirectory('content/ai-agents')
 
-      const routes = []
+  //     const routes = []
 
-      // Create the matrix of all combinations dynamically
-      for (const channel of channels) {
-        for (const agent of agents) {
-          routes.push(`/integrations/${channel}-with-${agent}`)
-        }
-      }
+  //     // Create the matrix of all combinations dynamically
+  //     for (const channel of channels) {
+  //       for (const agent of agents) {
+  //         routes.push(`/integrations/${channel}-with-${agent}`)
+  //       }
+  //     }
 
-      return routes
-    },
-  },
+  //     return routes
+  //   },
+  // },
 
   vite: {
     optimizeDeps: {
