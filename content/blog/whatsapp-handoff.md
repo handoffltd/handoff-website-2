@@ -7,7 +7,7 @@ authors:
       src: /images/handoff-icon-color-bg-trans-256-padded.png
 badge:
   label: WhatsApp Chatbot, WhatsApp Handoff
-date: 2026-10-03
+date: 2026-03-10
 draft: false
 image:
   src: /images/whatsapp-handoff/cover.png
