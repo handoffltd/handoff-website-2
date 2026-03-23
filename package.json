@@ -43,6 +43,7 @@
     "@iconify-json/lucide": "^1.2.98",
     "@iconify-json/simple-icons": "^1.2.74",
     "@nuxt/eslint": "1.15.2",
+    "@types/node": "^25.5.0",
     "eslint": "^10.1.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.6"

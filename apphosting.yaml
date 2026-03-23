@@ -23,7 +23,7 @@ env:
     availability:
       - RUNTIME
   - variable: STUDIO_GITHUB_REDIRECT_URL
-    value: https://www.handoff.chat
+    value: https://www.handoff.chat/__nuxt_studio/auth/github
     availability:
       - RUNTIME
   # See https://firebase.google.com/docs/app-hosting/configure#user-defined-environment
