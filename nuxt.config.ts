@@ -45,6 +45,24 @@ export default defineNuxtConfig({
     }
   },
 
+  routeRules: {
+    // Target all images in the /images/ folder
+    "/images/**": {
+      headers: {
+        // Cache for 1 year (31536000 seconds)
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+
+    // When using the @nuxt/image module with the default local provider (IPX),
+    // optimized images are served from /_ipx/. Cache those too:
+    "/_ipx/**": {
+      headers: {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    }
+  },
+
   site: {
     url: 'https://www.handoff.chat',
     name: 'Handoff'
