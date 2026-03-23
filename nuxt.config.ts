@@ -19,7 +19,7 @@ function getSlugsFromDirectory(dirPath: string) {
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [// Module order is critical. @nuxtjs/sitemap must come before @nuxt/content in your modules array.
-    '@nuxt/eslint', '@nuxt/ui', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-schema-org', '@nuxt/content', 'nuxt-studio'],
+    '@nuxt/eslint', '@nuxt/ui', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-schema-org', '@nuxt/content', 'nuxt-studio', 'nuxt-gtag'],
 
   css: ['~/assets/css/main.css'],
 
@@ -29,6 +29,10 @@ export default defineNuxtConfig({
 
   content: {
     experimental: { sqliteConnector: 'better-sqlite3' },
+  },
+
+  gtag: {
+    id: 'G-0FC3P4HRTH'
   },
 
   nitro: {
