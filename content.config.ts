@@ -1,5 +1,5 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
-import { asSeoCollection } from '@nuxtjs/seo/content'
+import { asSitemapCollection } from '@nuxtjs/sitemap/content'
 
 const variantEnum = z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link'])
 const colorEnum = z.enum(['primary', 'secondary', 'neutral', 'error', 'warning', 'success', 'info'])
@@ -48,10 +48,15 @@ const createSectionSchema = () => createBaseSchema().extend({
   features: z.array(createFeatureItemSchema())
 })
 
+// console.log(JSON.stringify(asSeoCollection({
+//   type: 'page',
+//   source: '**/*.md'
+// })))
+
 const collections = {
   content: defineCollection(
     // adds the robots frontmatter key to the collection
-    asSeoCollection({
+    asSitemapCollection({
       type: 'page',
       source: '**/*.md'
     })

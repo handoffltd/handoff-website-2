@@ -18,11 +18,8 @@ function getSlugsFromDirectory(dirPath: string) {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/ui',
-    '@nuxtjs/seo', // Module order is critical. @nuxtjs/seo must come before @nuxt/content in your modules array.
-    '@nuxt/content'
-  ],
+  modules: [// Module order is critical. @nuxtjs/sitemap must come before @nuxt/content in your modules array.
+    '@nuxt/eslint', '@nuxt/ui', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-schema-org', '@nuxt/content', 'nuxt-studio'],
 
   css: ['~/assets/css/main.css'],
 
@@ -69,9 +66,18 @@ export default defineNuxtConfig({
     },
   },
 
+  studio: {
+    repository: {
+      provider: 'github', // 'github' or 'gitlab'
+      owner: 'dipbhi',
+      repo: 'handoff-website-2',
+      branch: 'main'
+    }
+  },
+
   vite: {
     optimizeDeps: {
-      include: []
+      include: ['zod']
     }
   }
 })
