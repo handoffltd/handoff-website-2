@@ -36,6 +36,7 @@ export default defineNuxtConfig({
       routes: [
         '/'
       ],
+      
       crawlLinks: false
     }
   },
@@ -64,6 +65,8 @@ export default defineNuxtConfig({
 
       return routes
     },
+
+    zeroRuntime: true,
   },
 
   studio: {
