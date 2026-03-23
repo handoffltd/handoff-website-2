@@ -25,7 +25,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: false },
 
-  compatibilityDate: '2024-07-11',
+  compatibilityDate: '2024-09-19',
 
   content: {
     experimental: { sqliteConnector: 'better-sqlite3' },
