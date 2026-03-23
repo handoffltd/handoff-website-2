@@ -71,7 +71,7 @@ if (page.value?.faq?.items) {
           class="absolute -inset-full animate-spin [animation-duration:12s] bg-[conic-gradient(red,orange,yellow,green,blue,indigo,violet,red)]">
         </div>
 
-        <UColorModeImage :light="section.image.light" :dark="section.image.dark" :class="[
+        <UColorModeImage :light="section.image.light" :dark="section.image.dark" :alt="section.title" :class="[
           'shadow',
           section.imageRadiantBg ? 'relative z-10 bg-white dark:bg-gray-900 rounded-xl w-full' : 'rounded-lg'
         ]" />
@@ -139,7 +139,7 @@ if (page.value?.faq?.items) {
     <UPageSection v-for="(section, index) in page.sections2" :key="index" :title="section.title"
       :description="section.description" :orientation="section.orientation" :reverse="section.reverse"
       :features="section.features">
-      <UColorModeImage v-if="section.image" :light="section.image.light" :dark="section.image.dark"
+      <UColorModeImage v-if="section.image" :light="section.image.light" :dark="section.image.dark" :alt="section.title"
         class="rounded-lg shadow" />
     </UPageSection>
 
