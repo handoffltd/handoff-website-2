@@ -22,6 +22,10 @@ env:
     value: dc499d3903493908092f76008c8765aefa4d686f
     availability:
       - RUNTIME
+  - variable: STUDIO_GITHUB_REDIRECT_URL
+    value: https://www.handoff.chat
+    availability:
+      - RUNTIME
   # See https://firebase.google.com/docs/app-hosting/configure#user-defined-environment
   # - variable: MESSAGE
   #   value: Hello world!

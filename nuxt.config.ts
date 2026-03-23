@@ -36,7 +36,7 @@ export default defineNuxtConfig({
       routes: [
         '/'
       ],
-      
+
       crawlLinks: false
     }
   },
@@ -75,7 +75,8 @@ export default defineNuxtConfig({
       owner: 'dipbhi',
       repo: 'handoff-website-2',
       branch: 'main'
-    }
+    },
+    route: '/admin'
   },
 
   vite: {
