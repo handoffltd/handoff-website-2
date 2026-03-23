@@ -72,7 +72,7 @@ export default defineNuxtConfig({
   studio: {
     repository: {
       provider: 'github', // 'github' or 'gitlab'
-      owner: 'dipbhi',
+      owner: 'handoffltd',
       repo: 'handoff-website-2',
       branch: 'main'
     },
