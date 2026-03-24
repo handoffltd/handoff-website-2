@@ -19,12 +19,13 @@ const items = computed(() => [
   }, {
     label: 'Blog',
     to: '/blog'
+  },
+  {
+    label: 'Docs',
+    to: '/docs',
+    active: route.path.startsWith('/docs')
   }
-  // {
-  //   label: 'Docs',
-  //   to: '/docs',
-  //   active: route.path.startsWith('/docs')
-  // }, {
+  // , {
   //   label: 'Pricing',
   //   to: '/pricing'
   // }
