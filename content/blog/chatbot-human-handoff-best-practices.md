@@ -2,7 +2,7 @@
 title: "6 Chatbot Human Handoff Best Practices You Can't Ignore"
 description: "Stop frustrating your customers. Discover the top chatbot human handoff best practices to ensure a frictionless transition from AI to live agents."
 image:
-  src: /images/chatbot-to-human-handoff-best-practices/cover.png
+  src: /images/chatbot-human-handoff-best-practices/cover.png
 authors:
   - name: "Handoff Team"
     avatar:
