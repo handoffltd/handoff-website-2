@@ -60,9 +60,9 @@ if (page.value?.faq?.items) {
 
     <USeparator />
 
-    <UPageSection v-for="(section, index) in page.sections" :key="index" :title="section.title"
+    <LazyUPageSection v-for="(section, index) in page.sections" :key="index" :title="section.title"
       :description="section.description" :orientation="section.orientation" :reverse="section.reverse"
-      :features="section.features">
+      :features="section.features" hydrate-on-visible>
       <div v-if="section.image" :class="[
         section.imageRadiantBg ? 'relative flex p-0.5 overflow-hidden rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.2)]' : ''
       ]">
@@ -72,32 +72,33 @@ if (page.value?.faq?.items) {
         </div>
 
         <UColorModeImage :light="section.image.light" :dark="section.image.dark" :alt="section.title" loading="lazy"
-          :class="[
+          sizes="100vw sm:50vw md:400px xl:600px" :class="[
             'shadow',
             section.imageRadiantBg ? 'relative z-10 bg-white dark:bg-gray-900 rounded-xl w-full' : 'rounded-lg'
           ]" />
       </div>
       <!-- <UColorModeImage v-if="section.image" :light="section.image.light" :dark="section.image.dark"
         class="rounded-lg shadow" /> -->
-    </UPageSection>
+    </LazyUPageSection>
 
-    <USeparator />
+    <LazyUSeparator hydrate-on-visible />
 
-    <UPageSection :title="page.features.title" :description="page.features.description">
+    <LazyUPageSection :title="page.features.title" :description="page.features.description" hydrate-on-visible>
       <UPageGrid>
         <UPageCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" spotlight />
       </UPageGrid>
-    </UPageSection>
+    </LazyUPageSection>
 
-    <USeparator />
+    <LazyUSeparator hydrate-on-visible />
 
-    <UPageSection :title="page.benefits.title" :description="page.benefits.description" :features="page.benefits.items"
-      :ui="{ features: 'lg:grid-cols-2' }">
-    </UPageSection>
+    <LazyUPageSection :title="page.benefits.title" :description="page.benefits.description"
+      :features="page.benefits.items" :ui="{ features: 'lg:grid-cols-2' }" hydrate-on-visible>
+    </LazyUPageSection>
 
-    <USeparator />
+    <LazyUSeparator hydrate-on-visible />
 
-    <UPageSection id="steps" :description="page.steps.description" class="relative overflow-hidden">
+    <LazyUPageSection id="steps" :description="page.steps.description" class="relative overflow-hidden"
+      hydrate-on-visible>
       <template #title>
         <MDC :value="page.steps.title" />
       </template>
@@ -106,7 +107,7 @@ if (page.value?.faq?.items) {
         <UPageCard v-for="(step, index) in page.steps.items" :key="index" class="group"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }" :as="'li'">
           <UColorModeImage v-if="step.image" :light="step.image?.light" :dark="step.image?.dark" :alt="step.title"
-            loading="lazy" class="size-full" />
+            sizes="350px md:400px" loading="lazy" class="size-full" />
 
           <div class="flex flex-col gap-2">
             <span class="text-lg font-semibold">
@@ -118,9 +119,9 @@ if (page.value?.faq?.items) {
           </div>
         </UPageCard>
       </template>
-    </UPageSection>
+    </LazyUPageSection>
 
-    <USeparator />
+    <LazyUSeparator hydrate-on-visible />
 
     <!-- <UPageSection id="testimonials" :headline="page.testimonials.headline" :title="page.testimonials.title"
       :description="page.testimonials.description">
@@ -137,27 +138,27 @@ if (page.value?.faq?.items) {
 
     <USeparator /> -->
 
-    <UPageSection v-for="(section, index) in page.sections2" :key="index" :title="section.title"
+    <LazyUPageSection v-for="(section, index) in page.sections2" :key="index" :title="section.title"
       :description="section.description" :orientation="section.orientation" :reverse="section.reverse"
-      :features="section.features">
+      :features="section.features" hydrate-on-visible>
       <UColorModeImage v-if="section.image" :light="section.image.light" :dark="section.image.dark" :alt="section.title"
-        loading="lazy" class="rounded-lg shadow" />
-    </UPageSection>
+        sizes="100vw sm:50vw md:400px xl:600px" loading="lazy" class="rounded-lg shadow" />
+    </LazyUPageSection>
 
-    <USeparator />
+    <LazyUSeparator hydrate-on-visible />
 
-    <UPageSection :title="page.faq.title" :description="page.faq.description">
+    <LazyUPageSection :title="page.faq.title" :description="page.faq.description" hydrate-on-visible>
       <UAccordion :items="page.faq.items" :unmount-on-hide="false" :default-value="['0']" type="multiple"
         class="max-w-3xl mx-auto" :ui="{
           trigger: 'text-base text-highlighted',
           body: 'text-base text-muted'
         }" />
-    </UPageSection>
+    </LazyUPageSection>
 
-    <USeparator />
+    <LazyUSeparator hydrate-on-visible />
 
-    <UPageCTA v-bind="page.cta" variant="naked" class="overflow-hidden">
+    <LazyUPageCTA v-bind="page.cta" variant="naked" class="overflow-hidden" hydrate-on-visible>
       <LazyStarsBg />
-    </UPageCTA>
+    </LazyUPageCTA>
   </div>
 </template>

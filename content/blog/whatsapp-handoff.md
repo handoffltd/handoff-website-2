@@ -21,7 +21,7 @@ This is exactly why building a reliable whatsapp handoff protocol is critical. Y
 
 In this post, we’re going to look at how you can easily implement handoff whatsapp capabilities using the Handoff.chat platform, connecting popular AI agents directly to your WhatsApp Business number.
 
-![cover](/images/whatsapp-handoff/cover.png)
+![cover](/images/whatsapp-handoff/cover.png){sizes="100vw sm:50vw md:400px xl:600px"}
 
 ## Why WhatsApp specifically?
 

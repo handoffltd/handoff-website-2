@@ -20,7 +20,7 @@ To build a support system that actually scales without frustrating your users, y
 
 In this article, we’ll explore the evolution of AI-driven chat and why a seamless transition to a human agent is the most critical feature of any modern support stack.
 
-![cover](/images/chatbot-to-human-handoff-guide/cover.jpg)
+![cover](/images/chatbot-to-human-handoff-guide/cover.jpg){sizes="100vw sm:50vw md:400px xl:600px"}
 
 ## The Rise of the AI Agent: From Scripts to Reasoning
 

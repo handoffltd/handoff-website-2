@@ -20,6 +20,8 @@ While AI agents and LLMs have drastically improved how we handle frontline suppo
 
 If you want to keep your CSAT scores high and your support team sane, here are the core chatbot human handoff best practices you need to implement.
 
+![cover](/images/chatbot-human-handoff-best-practices/cover.png){sizes="100vw sm:50vw md:400px xl:600px"}
+
 ## 1. Never Pretend the Bot is Human
 
 Trust is incredibly fragile in customer service. If you give your AI a human name and a stock photo avatar, users will talk to it expecting human-level intuition. When the bot inevitably replies with a structured, automated response, the customer feels tricked.
