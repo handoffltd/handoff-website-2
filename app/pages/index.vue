@@ -85,7 +85,8 @@ if (page.value?.faq?.items) {
 
     <LazyUPageSection :title="page.features.title" :description="page.features.description" hydrate-on-visible>
       <UPageGrid>
-        <UPageCard v-for="(item, index) in page.features.items" :key="index" v-bind="item" spotlight />
+        <UPageCard v-for="(item, index) in page.features.items" :key="index" :title="item.title"
+          :description="item.description" :icon="item.icon" spotlight />
       </UPageGrid>
     </LazyUPageSection>
 
@@ -157,7 +158,8 @@ if (page.value?.faq?.items) {
 
     <LazyUSeparator hydrate-on-visible />
 
-    <LazyUPageCTA v-bind="page.cta" variant="naked" class="overflow-hidden" hydrate-on-visible>
+    <LazyUPageCTA :title="page.cta.title" :description="page.cta.description" :links="page.cta.links" variant="naked"
+      class="overflow-hidden" hydrate-on-visible>
       <LazyStarsBg />
     </LazyUPageCTA>
   </div>

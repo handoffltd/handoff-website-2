@@ -77,18 +77,20 @@ useSeoMeta({
     <USeparator />
 
     <!-- sections -->
-    <UPageSection v-for="(section, index) in page.sections" :key="index" :title="section.title"
-      :description="section.description">
+    <LazyUPageSection v-for="(section, index) in page.sections" :key="index" :title="section.title"
+      :description="section.description" hydrate-on-visible>
       <UPageGrid class="lg:grid-cols-2">
         <UPageCard v-for="(item, index2) in page.benefits" :key="index2" :title="item.title"
           :description="item.description" spotlight />
       </UPageGrid>
-    </UPageSection>
+    </LazyUPageSection>
 
-    <USeparator />
+    <LazyUSeparator hydrate-on-visible />
 
     <!-- integrations -->
-    <UPageSection :title="`Supported AI Integrations with ${page.label}`" description="Connect conversations, automate replies, and empower engagement—with smooth human escalation built in.">
+    <LazyUPageSection :title="`Supported AI Integrations with ${page.label}`"
+      description="Connect conversations, automate replies, and empower engagement—with smooth human escalation built in."
+      hydrate-on-visible>
       <UPageGrid class="lg:grid-cols-2">
         <UPageCard v-for="(integration, index) in integrations" :key="index" :title="integration.title"
           :description="integration.description" :to="integration.link">
@@ -107,13 +109,14 @@ useSeoMeta({
           </template>
         </UPageCard>
       </UPageGrid>
-    </UPageSection>
+    </LazyUPageSection>
 
-    <USeparator />
+    <LazyUSeparator hydrate-on-visible />
 
-    <UPageCTA v-bind="page.cta" variant="naked" class="overflow-hidden"
-      :links="[{ label: 'Get Started with the AI Smart Inbox for Free', to: 'https://app.handoff.chat', target: '_blank', icon: 'lucide:rocket', class: 'bg-gradient-to-r from-sky-700 via-purple-600 to-red-600 dark:from-sky-500 dark:via-purple-500 dark:to-red-500 p-3 group text-white dark:text-white rounded-full' }]">
+    <LazyUPageCTA :title="page.cta.title" :description="page.cta.description" variant="naked" class="overflow-hidden"
+      :links="[{ label: 'Get Started with the AI Smart Inbox for Free', to: 'https://app.handoff.chat', target: '_blank', icon: 'lucide:rocket', class: 'bg-gradient-to-r from-sky-700 via-purple-600 to-red-600 dark:from-sky-500 dark:via-purple-500 dark:to-red-500 p-3 group text-white dark:text-white rounded-full' }]"
+      hydrate-on-visible>
       <LazyStarsBg />
-    </UPageCTA>
+    </LazyUPageCTA>
   </div>
 </template>

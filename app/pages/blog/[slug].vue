@@ -29,7 +29,7 @@ useSeoMeta({
   <UContainer v-if="post">
     <UPageHeader :title="post.title" :description="post.description">
       <template #headline>
-        <UBadge v-bind="post.badge" variant="subtle" />
+        <UBadge :label="post.badge.label" variant="subtle" />
         <span class="text-muted">&middot;</span>
         <time class="text-muted">{{ new Date(post.date).toLocaleDateString('en', {
           year: 'numeric',
@@ -42,7 +42,7 @@ useSeoMeta({
       <div class="flex flex-wrap items-center gap-3 mt-4">
         <UButton v-for="(author, index) in post.authors" :key="index" :to="author.to" color="neutral" variant="subtle"
           target="_blank" size="sm">
-          <UAvatar v-bind="author.avatar" alt="Author avatar" size="2xs" />
+          <UAvatar :src="author.avatar.src" alt="Author avatar" size="2xs" />
 
           {{ author.name }}
         </UButton>

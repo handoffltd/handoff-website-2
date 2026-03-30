@@ -19,7 +19,7 @@ useSeoMeta({
 
 <template>
   <UContainer>
-    <UPageHeader v-bind="page" class="py-12.5" />
+    <UPageHeader :title="page?.title" :description="page?.description" class="py-12.5" />
 
     <UPageBody>
       <UBlogPosts>
