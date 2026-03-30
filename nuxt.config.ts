@@ -45,6 +45,10 @@ export default defineNuxtConfig({
     }
   },
 
+  robots: {
+    disallow: "/_nuxt/"
+  },
+
   routeRules: {
     '/docs': { redirect: '/docs/getting-started', prerender: false },
 
