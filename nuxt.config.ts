@@ -107,6 +107,12 @@ export default defineNuxtConfig({
     route: '/admin'
   },
 
+  ui: {
+    experimental: {
+      componentDetection: true
+    }
+  },
+
   vite: {
     optimizeDeps: {
       include: ['zod']
