@@ -19,7 +19,7 @@ function getSlugsFromDirectory(dirPath: string) {
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [// Module order is critical. @nuxtjs/sitemap must come before @nuxt/content in your modules array.
-    '@nuxt/eslint', '@nuxt/ui', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-schema-org', '@nuxt/content', 'nuxt-studio', 'nuxt-gtag'],
+    '@nuxt/eslint', '@nuxt/ui', '@nuxt/image', '@nuxtjs/robots', '@nuxtjs/sitemap', 'nuxt-schema-org', '@nuxt/content', 'nuxt-studio', 'nuxt-gtag'],
 
   css: ['~/assets/css/main.css'],
 

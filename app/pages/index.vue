@@ -71,10 +71,11 @@ if (page.value?.faq?.items) {
           class="absolute -inset-full animate-spin [animation-duration:12s] bg-[conic-gradient(red,orange,yellow,green,blue,indigo,violet,red)]">
         </div>
 
-        <UColorModeImage :light="section.image.light" :dark="section.image.dark" :alt="section.title" :class="[
-          'shadow',
-          section.imageRadiantBg ? 'relative z-10 bg-white dark:bg-gray-900 rounded-xl w-full' : 'rounded-lg'
-        ]" />
+        <UColorModeImage :light="section.image.light" :dark="section.image.dark" :alt="section.title" loading="lazy"
+          :class="[
+            'shadow',
+            section.imageRadiantBg ? 'relative z-10 bg-white dark:bg-gray-900 rounded-xl w-full' : 'rounded-lg'
+          ]" />
       </div>
       <!-- <UColorModeImage v-if="section.image" :light="section.image.light" :dark="section.image.dark"
         class="rounded-lg shadow" /> -->
@@ -103,9 +104,9 @@ if (page.value?.faq?.items) {
 
       <template #features>
         <UPageCard v-for="(step, index) in page.steps.items" :key="index" class="group"
-          :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }">
+          :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }" :as="'li'">
           <UColorModeImage v-if="step.image" :light="step.image?.light" :dark="step.image?.dark" :alt="step.title"
-            class="size-full" />
+            loading="lazy" class="size-full" />
 
           <div class="flex flex-col gap-2">
             <span class="text-lg font-semibold">
@@ -140,7 +141,7 @@ if (page.value?.faq?.items) {
       :description="section.description" :orientation="section.orientation" :reverse="section.reverse"
       :features="section.features">
       <UColorModeImage v-if="section.image" :light="section.image.light" :dark="section.image.dark" :alt="section.title"
-        class="rounded-lg shadow" />
+        loading="lazy" class="rounded-lg shadow" />
     </UPageSection>
 
     <USeparator />

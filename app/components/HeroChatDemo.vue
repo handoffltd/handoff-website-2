@@ -164,7 +164,8 @@
                   status for you.</span>
                 <span v-else class="opacity-50">Reply to customer...</span>
               </div>
-              <UButton color="primary" icon="i-heroicons-paper-airplane" size="lg" :disabled="botTyping" />
+              <UButton color="primary" icon="i-heroicons-paper-airplane" size="lg" :disabled="botTyping"
+                aria-label="Send" />
             </div>
           </div>
         </div>
