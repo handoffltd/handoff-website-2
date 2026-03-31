@@ -37,7 +37,7 @@ export default defineNuxtConfig({
 
   image: {
     cloudflare: {
-      baseURL: "https://dipen-678.workers.dev"
+      baseURL: "https://handoff-website-2.dipen-678.workers.dev"
     }
   },
 
