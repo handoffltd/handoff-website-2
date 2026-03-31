@@ -35,13 +35,6 @@ export default defineNuxtConfig({
     id: 'G-0FC3P4HRTH'
   },
 
-  image: {
-    provider: 'cloudflare',
-    cloudflare: {
-      baseURL: "https://handoff-website-2.dipen-678.workers.dev"
-    }
-  },
-
   nitro: {
     prerender: {
       routes: [
