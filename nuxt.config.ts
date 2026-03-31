@@ -35,6 +35,19 @@ export default defineNuxtConfig({
     id: 'G-0FC3P4HRTH'
   },
 
+  image: {
+    screens: {
+      image28: 28,
+      image56: 56,
+      image350: 350,
+      image400: 400,
+      image600: 600,
+      image640: 640,
+      image1024: 1024,
+      image1280: 1280
+    },
+  },
+
   nitro: {
     prerender: {
       routes: [
