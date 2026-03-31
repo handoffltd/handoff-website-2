@@ -8,7 +8,7 @@
         <div class="absolute top-0 inset-x-0 h-5 bg-gray-900 dark:bg-gray-950 rounded-b-2xl w-32 mx-auto z-20"></div>
 
         <div :class="[theme.headerBg, theme.headerText, 'pt-8 pb-3 px-4 flex items-center gap-3 shadow-sm z-10']">
-          <UAvatar src="/images/customer.png" size="sm" alt="Brand Logo" />
+          <UAvatar src="/images/customer.webp" size="sm" alt="Brand Logo" />
           <div class="flex flex-col">
             <span class="font-semibold text-sm leading-tight">Brand Support</span>
             <span :class="[theme.headerSubText, 'text-[10px] flex items-center gap-1']">
@@ -81,7 +81,7 @@
               <UIcon name="i-heroicons-inbox-stack" /> Handoff Inbox
             </span>
           </div>
-          <UAvatar src="/images/humanagent.png" size="xs" alt="Agent" />
+          <UAvatar src="/images/humanagent.webp" size="xs" alt="Agent" />
         </div>
 
         <div class="flex flex-1 overflow-hidden">
@@ -123,7 +123,7 @@
                     <div v-else class="mt-1 shrink-0">
                       <UIcon v-if="msg.sender === 'bot'" name="i-heroicons-cpu-chip"
                         class="w-8 h-8 text-primary-500 bg-primary-50 dark:bg-primary-900/30 rounded-full p-1" />
-                      <UAvatar v-else size="sm" src="/images/humanagent.png" />
+                      <UAvatar v-else size="sm" src="/images/humanagent.webp" />
                     </div>
 
                     <div class="flex flex-col" :class="msg.sender === 'customer' ? 'items-start' : 'items-end'">

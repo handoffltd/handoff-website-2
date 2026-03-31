@@ -4,7 +4,7 @@ description: "Learn why a chatbot to human handoff is vital for LLM and AI agent
 seo:
   title: "Chatbot to Human Handoff: The Key to Better AI Support"
 image:
-  src: /images/chatbot-to-human-handoff-guide/cover.jpg
+  src: /images/chatbot-to-human-handoff-guide/cover.webp
 authors:
   - name: Handoff Team
     avatar:
@@ -20,7 +20,7 @@ To build a support system that actually scales without frustrating your users, y
 
 In this article, we’ll explore the evolution of AI-driven chat and why a seamless transition to a human agent is the most critical feature of any modern support stack.
 
-![cover](/images/chatbot-to-human-handoff-guide/cover.jpg){sizes="100vw sm:50vw md:400px xl:600px"}
+![cover](/images/chatbot-to-human-handoff-guide/cover.webp){sizes="100vw sm:50vw md:400px xl:600px"}
 
 ## The Rise of the AI Agent: From Scripts to Reasoning
 

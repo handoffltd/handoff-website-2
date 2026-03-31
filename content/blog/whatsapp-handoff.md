@@ -10,7 +10,7 @@ badge:
 date: 2026-03-10
 draft: false
 image:
-  src: /images/whatsapp-handoff/cover.png
+  src: /images/whatsapp-handoff/cover.webp
 ---
 
 If you’re running customer support or sales on WhatsApp, you already know the drill. Customers expect fast, conversational, and highly accurate responses. To handle the volume, you’ve probably deployed an AI agent. But what happens when the bot gets confused, or the customer has a highly specific issue that requires a human touch?
@@ -21,7 +21,7 @@ This is exactly why building a reliable whatsapp handoff protocol is critical. Y
 
 In this post, we’re going to look at how you can easily implement handoff whatsapp capabilities using the Handoff.chat platform, connecting popular AI agents directly to your WhatsApp Business number.
 
-![cover](/images/whatsapp-handoff/cover.png){sizes="100vw sm:50vw md:400px xl:600px"}
+![cover](/images/whatsapp-handoff/cover.webp){sizes="100vw sm:50vw md:400px xl:600px"}
 
 ## Why WhatsApp specifically?
 

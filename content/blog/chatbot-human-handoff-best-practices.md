@@ -2,7 +2,7 @@
 title: "6 Chatbot Human Handoff Best Practices You Can't Ignore"
 description: "Stop frustrating your customers. Discover the top chatbot human handoff best practices to ensure a frictionless transition from AI to live agents."
 image:
-  src: /images/chatbot-human-handoff-best-practices/cover.png
+  src: /images/chatbot-human-handoff-best-practices/cover.webp
 authors:
   - name: "Handoff Team"
     avatar:
@@ -20,7 +20,7 @@ While AI agents and LLMs have drastically improved how we handle frontline suppo
 
 If you want to keep your CSAT scores high and your support team sane, here are the core chatbot human handoff best practices you need to implement.
 
-![cover](/images/chatbot-human-handoff-best-practices/cover.png){sizes="100vw sm:50vw md:400px xl:600px"}
+![cover](/images/chatbot-human-handoff-best-practices/cover.webp){sizes="100vw sm:50vw md:400px xl:600px"}
 
 ## 1. Never Pretend the Bot is Human
 

@@ -18,8 +18,8 @@ sections:
     id: features
     orientation: horizontal
     image:
-      light: /images/bot-and-human-chat-1.png
-      dark: /images/bot-and-human-chat-1.png
+      light: /images/bot-and-human-chat.webp
+      dark: /images/bot-and-human-chat.webp
     imageRadiantBg: true
     features:
       - name: Smart Inbox
@@ -84,18 +84,18 @@ steps:
     - title: Connect Your Channels
       description: Bring WhatsApp, Messenger, Instagram, and more into one unified inbox — no more juggling tabs.
       image:
-        light: '/images/connect.png'
-        dark: '/images/connect.png'
+        light: '/images/connect.webp'
+        dark: '/images/connect.webp'
     - title: Link Your AI Agent
       description: Plug in the LLM AI agent you trust most to automate routine replies, tailored to your brand’s voice.
       image:
-        light: '/images/ai-agent.png'
-        dark: '/images/ai-agent.png'
+        light: '/images/ai-agent.webp'
+        dark: '/images/ai-agent.webp'
     - title: Manage Conversations Seamlessly
       description: Let AI handle the everyday questions, and step in manually when a human touch is needed.
       image:
-        light: '/images/hybrid-chat.png'
-        dark: '/images/hybrid-chat.png'
+        light: '/images/hybrid-chat.webp'
+        dark: '/images/hybrid-chat.webp'
 # testimonials:
 #   headline: Trusted by Developers
 #   title: Join Thousands Building with Nuxt UI
@@ -169,8 +169,8 @@ sections2:
   orientation: horizontal
   reverse: false
   image:
-    light: /images/whitelabel.png
-    dark: /images/whitelabel.png
+    light: /images/whitelabel.webp
+    dark: /images/whitelabel.webp
   features:
     - name: 100% White-Label Ready
       description: Remove Handoff branding completely. Customize colors, logos, and UI elements to match your brand's native experience.
@@ -188,8 +188,8 @@ sections2:
   orientation: horizontal
   reverse: true
   image:
-    light: /images/devices.jpg
-    dark: /images/devices.jpg
+    light: /images/devices.webp
+    dark: /images/devices.webp
   features:
     - name: Web Browser
       description: Log in instantly from any modern browser, no installation required.
