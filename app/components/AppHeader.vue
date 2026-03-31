@@ -54,7 +54,7 @@ const items = computed(() => [
 
     <template #right>
       <UButton icon="i-lucide-log-in" color="neutral" variant="ghost" href="https://app.handoff.chat" target="_blank"
-        class="lg:hidden" />
+        class="lg:hidden" aria-label="Sign In" />
 
       <UButton label="Sign In" color="neutral" variant="outline" href="https://app.handoff.chat" target="_blank"
         class="hidden lg:inline-flex" />
