@@ -58,7 +58,7 @@ export default defineNuxtConfig({
         '/'
       ],
 
-      crawlLinks: false
+      crawlLinks: true
     }
   },
 
@@ -67,7 +67,6 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/**': { isr: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false },
 
     // Target all images in the /images/ folder
