@@ -25,3 +25,7 @@ pnpm run dev
 ## Production Deploy
 
 Deploys to Vercel using CI when code is pushed to the `main` branch.
+
+## Known Issues
+
+- When `isr: true`, page refresh fails when running locally. It works fine when deployed to Vercel.

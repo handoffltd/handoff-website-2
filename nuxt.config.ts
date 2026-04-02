@@ -35,6 +35,10 @@ export default defineNuxtConfig({
     id: 'G-0FC3P4HRTH'
   },
 
+  icon: {
+    serverBundle: 'local'
+  },
+
   image: {
     screens: {
       image28: 28,
