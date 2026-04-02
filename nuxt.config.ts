@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-09-19',
 
   content: {
-    experimental: { sqliteConnector: 'better-sqlite3' },
+    experimental: { sqliteConnector: 'native' },
   },
 
   gtag: {
@@ -63,7 +63,6 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/docs/getting-started': { isr: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false },
 
     // Target all images in the /images/ folder

@@ -16,7 +16,6 @@
     "@nuxt/ui": "^4.5.1",
     "@nuxtjs/robots": "5.7.1",
     "@nuxtjs/sitemap": "^8.0.11",
-    "better-sqlite3": "^12.8.0",
     "nuxt": "^4.4.2",
     "nuxt-gtag": "4.1.0",
     "nuxt-schema-org": "5.0.10",
@@ -28,7 +27,6 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "nuxt",
-      "better-sqlite3",
       "sharp",
       "sqlite3"
     ],
