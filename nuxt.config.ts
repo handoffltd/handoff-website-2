@@ -43,12 +43,10 @@ export default defineNuxtConfig({
     screens: {
       image28: 28,
       image56: 56,
-      image350: 350,
+      image350: 300,
       image400: 400,
       image600: 600,
-      image640: 640,
-      image1024: 1024,
-      image1280: 1280
+      image900: 900
     },
   },
 
@@ -58,8 +56,8 @@ export default defineNuxtConfig({
         '/'
       ],
 
-      crawlLinks: true
-    }
+      crawlLinks: false
+    },
   },
 
   robots: {
@@ -67,6 +65,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    '/**': { isr: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false },
 
     // Target all images in the /images/ folder

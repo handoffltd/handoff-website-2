@@ -77,8 +77,6 @@ if (page.value?.faq?.items) {
             section.imageRadiantBg ? 'relative z-10 bg-white dark:bg-gray-900 rounded-xl w-full' : 'rounded-lg'
           ]" />
       </div>
-      <!-- <UColorModeImage v-if="section.image" :light="section.image.light" :dark="section.image.dark"
-        class="rounded-lg shadow" /> -->
     </LazyUPageSection>
 
     <LazyUSeparator hydrate-on-visible />
@@ -108,7 +106,7 @@ if (page.value?.faq?.items) {
         <UPageCard v-for="(step, index) in page.steps.items" :key="index" class="group"
           :ui="{ container: 'p-4 sm:p-4', title: 'flex items-center gap-1' }" :as="'li'">
           <UColorModeImage v-if="step.image" :light="step.image?.light" :dark="step.image?.dark" :alt="step.title"
-            sizes="350px md:400px" loading="lazy" class="size-full" />
+            sizes="300px md:400px" loading="lazy" class="size-full" />
 
           <div class="flex flex-col gap-2">
             <span class="text-lg font-semibold">
