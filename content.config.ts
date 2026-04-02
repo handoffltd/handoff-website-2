@@ -1,5 +1,6 @@
-import { defineCollection, defineContentConfig, z } from '@nuxt/content'
-import { asSitemapCollection } from '@nuxtjs/sitemap/content'
+import { defineCollection, defineContentConfig, property } from '@nuxt/content'
+import { defineSitemapSchema } from '@nuxtjs/sitemap/content'
+import { z } from 'zod';
 
 const variantEnum = z.enum(['solid', 'outline', 'subtle', 'soft', 'ghost', 'link'])
 const colorEnum = z.enum(['primary', 'secondary', 'neutral', 'error', 'warning', 'success', 'info'])
@@ -12,16 +13,16 @@ const createBaseSchema = () => z.object({
 })
 
 const createFeatureItemSchema = () => createBaseSchema().extend({
-  icon: z.string().optional().editor({ input: 'icon' }),
+  icon: property(z.string().optional()).editor({ input: 'icon' }),
   ui: z.object({
     leading: z.string().optional()
-  }).editor({ hidden: true })
+  })
 })
 
 const createLinkSchema = () => z.object({
   label: z.string().nonempty(),
   to: z.string().nonempty(),
-  icon: z.string().optional().editor({ input: 'icon' }),
+  icon: property(z.string().optional()).editor({ input: 'icon' }),
   size: sizeEnum.optional(),
   trailing: z.boolean().optional(),
   target: z.string().optional(),
@@ -30,7 +31,7 @@ const createLinkSchema = () => z.object({
 })
 
 const createImageSchema = () => z.object({
-  src: z.string().nonempty().editor({ input: 'media' }),
+  src: property(z.string().nonempty()).editor({ input: 'media' }),
   alt: z.string().optional(),
   loading: z.enum(['lazy', 'eager']).optional(),
   srcset: z.string().optional()
@@ -41,8 +42,8 @@ const createSectionSchema = () => createBaseSchema().extend({
   orientation: orientationEnum.optional(),
   reverse: z.boolean().optional(),
   image: z.object({
-    light: z.string().editor({ input: 'media' }),
-    dark: z.string().editor({ input: 'media' })
+    light: property(z.string().nonempty()).editor({ input: 'media' }),
+    dark: property(z.string().nonempty()).editor({ input: 'media' })
   }).optional(),
   imageRadiantBg: z.boolean().optional(),
   features: z.array(createFeatureItemSchema())
@@ -54,13 +55,13 @@ const createSectionSchema = () => createBaseSchema().extend({
 // })))
 
 const collections = {
-  content: defineCollection(
-    // adds the robots frontmatter key to the collection
-    asSitemapCollection({
-      type: 'page',
-      source: '**/*.md'
-    })
-  ),
+  // content: defineCollection(
+  //   // adds the robots frontmatter key to the collection
+  //   asSitemapCollection({
+  //     type: 'page',
+  //     source: '**/*.md'
+  //   })
+  // ),
   index: defineCollection({
     source: 'index.yml',
     type: 'page',
@@ -78,8 +79,8 @@ const collections = {
       steps: createBaseSchema().extend({
         items: z.array(createFeatureItemSchema().extend({
           image: z.object({
-            light: z.string().editor({ input: 'media' }),
-            dark: z.string().editor({ input: 'media' })
+            light: property(z.string().nonempty()).editor({ input: 'media' }),
+            dark: property(z.string().nonempty()).editor({ input: 'media' })
           }).optional()
         }))
       }),
@@ -109,12 +110,16 @@ const collections = {
       }),
       cta: createBaseSchema().extend({
         links: z.array(createLinkSchema())
-      })
+      }),
+      sitemap: defineSitemapSchema(),
     })
   }),
   docs: defineCollection({
     source: 'docs/**/*',
-    type: 'page'
+    type: 'page',
+    schema: z.object({
+      sitemap: defineSitemapSchema(),
+    }),
   }),
   pricing: defineCollection({
     source: 'pricing.yml',
@@ -146,51 +151,48 @@ const collections = {
             content: z.string().nonempty()
           })
         )
-      })
+      }),
+      sitemap: defineSitemapSchema(),
     })
   }),
   blog: defineCollection({
     source: 'blog.yml',
-    type: 'page'
+    type: 'page',
+    schema: z.object({
+      sitemap: defineSitemapSchema(),
+    }),
   }),
   posts: defineCollection({
     source: 'blog/**/*',
     type: 'page',
     schema: z.object({
       draft: z.boolean().optional(),
-      image: z.object({ src: z.string().nonempty().editor({ input: 'media' }) }),
+      image: z.object({ src: property(z.string().nonempty()).editor({ input: 'media' }) }),
       authors: z.array(
         z.object({
           name: z.string().nonempty(),
           to: z.string().nonempty(),
-          avatar: z.object({ src: z.string().nonempty().editor({ input: 'media' }) })
+          avatar: z.object({ src: property(z.string().nonempty()).editor({ input: 'media' }) })
         })
       ),
       date: z.date(),
-      badge: z.object({ label: z.string().nonempty() })
-    })
-  }),
-  changelog: defineCollection({
-    source: 'changelog.yml',
-    type: 'page'
-  }),
-  versions: defineCollection({
-    source: 'changelog/**/*',
-    type: 'page',
-    schema: z.object({
-      title: z.string().nonempty(),
-      description: z.string(),
-      date: z.date(),
-      image: z.string()
+      badge: z.object({ label: z.string().nonempty() }),
+      sitemap: defineSitemapSchema(),
     })
   }),
   legal: defineCollection({
     source: 'legal/**/*',
-    type: 'page'
+    type: 'page',
+    schema: z.object({
+      sitemap: defineSitemapSchema(),
+    }),
   }),
   channelsIndex: defineCollection({
     source: 'channels.yml',
-    type: 'page'
+    type: 'page',
+    schema: z.object({
+      sitemap: defineSitemapSchema(),
+    }),
   }),
   channels: defineCollection({
     source: 'channels/**/*', // Using '6' to follow your existing numbering convention
@@ -209,12 +211,16 @@ const collections = {
         useCase: z.string().nonempty(),
         platformStrength: z.string().nonempty(),
         benefits: z.array(z.string().nonempty())
-      })
+      }),
+      sitemap: defineSitemapSchema(),
     })
   }),
   aiAgentsIndex: defineCollection({
     source: 'ai-agents.yml',
-    type: 'page'
+    type: 'page',
+    schema: z.object({
+      sitemap: defineSitemapSchema(),
+    }),
   }),
   aiAgents: defineCollection({
     source: 'ai-agents/**/*', // Using '6' to follow your existing numbering convention
@@ -232,12 +238,16 @@ const collections = {
         technicalEdge: z.string().nonempty(),
         bestFor: z.string().nonempty(),
         benefits: z.array(z.string().nonempty())
-      })
+      }),
+      sitemap: defineSitemapSchema(),
     })
   }),
   integrationsIndex: defineCollection({
     source: 'integrations.yml',
-    type: 'page'
+    type: 'page',
+    schema: z.object({
+      sitemap: defineSitemapSchema(),
+    }),
   }),
   integrations: defineCollection({
     source: 'integrations/**',
@@ -250,7 +260,8 @@ const collections = {
             content: z.string().nonempty()
           })
         )
-      })
+      }),
+      sitemap: defineSitemapSchema(),
     })
   })
 }

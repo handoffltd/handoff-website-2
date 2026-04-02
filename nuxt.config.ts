@@ -63,7 +63,8 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/docs': { redirect: '/docs/getting-started', prerender: true },
+    // removed from routeRules and added redirect in the middleware to avoid Vercel hosting page refresh issue
+    // '/docs': { redirect: '/docs/getting-started', prerender: false },
 
     // Target all images in the /images/ folder
     "/images/**": {
