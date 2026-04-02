@@ -49,12 +49,14 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    preset: 'vercel',
+
     prerender: {
       routes: [
         '/'
       ],
 
-      crawlLinks: true
+      crawlLinks: false
     }
   },
 
@@ -63,6 +65,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
+    '/**': { isr: true },
     '/docs': { redirect: '/docs/getting-started', prerender: false },
 
     // Target all images in the /images/ folder
