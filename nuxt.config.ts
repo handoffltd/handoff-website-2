@@ -63,7 +63,7 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/docs': { redirect: '/docs/getting-started', prerender: false },
+    '/docs': { redirect: '/docs/getting-started', prerender: true },
 
     // Target all images in the /images/ folder
     "/images/**": {
