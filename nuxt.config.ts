@@ -2,10 +2,10 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 // Helper function to read a directory and extract slugs from .md files
-function getSlugsFromDirectory(dirPath: string) {
+async function getSlugsFromDirectory(dirPath: string) {
   try {
     const fullPath = path.resolve(process.cwd(), dirPath)
-    const files = fs.readdirSync(fullPath)
+    const files = await fs.promises.readdir(fullPath)
 
     return files
       .filter(file => file.endsWith('.md'))
@@ -101,11 +101,11 @@ export default defineNuxtConfig({
 
   sitemap: {
     // Dynamically generate the programmatic SEO URLs
-    urls: () => {
+    urls: async () => {
       // Integrations URLs
       // Read the directories based on your content.config.ts structure
-      const channels = getSlugsFromDirectory('content/channels')
-      const agents = getSlugsFromDirectory('content/ai-agents')
+      const channels = await getSlugsFromDirectory('content/channels')
+      const agents = await getSlugsFromDirectory('content/ai-agents')
 
       const routes = []
 
