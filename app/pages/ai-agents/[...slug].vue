@@ -87,6 +87,15 @@ useSeoMeta({
 
     <LazyUSeparator hydrate-on-visible />
 
+    <!-- body content (when available) -->
+    <template v-if="page.body?.value?.length">
+      <LazyUPageSection>
+        <LazyContentRenderer :value="page"></LazyContentRenderer>
+      </LazyUPageSection>
+
+      <LazyUSeparator hydrate-on-visible />
+    </template>
+
     <!-- integrations -->
     <LazyUPageSection :title="`Connect Your Favorite Communication Channel with ${page.label}`"
       description="Streamline customer conversations across channels, with AI support and smooth human transitions."

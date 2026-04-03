@@ -68,7 +68,13 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/**': { isr: true },
+    // Turn isr on for all the routes. Conditionally applied only in production
+    ...(process.env.NODE_ENV === 'production'
+      ? {
+        '/**': { isr: true }
+      }
+      : {}),
+
     '/docs': { redirect: '/docs/getting-started', prerender: false },
 
     // Target all images in the /images/ folder

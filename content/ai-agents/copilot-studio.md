@@ -28,16 +28,3 @@ sections:
   - title: Microsoft Copilot Studio Integration
     description: Bring the power of Microsoft's enterprise-grade AI into your omnichannel inbox. By connecting your custom Microsoft Copilot Studio agents, you can securely automate complex customer requests, tap into your internal data, and deliver deeply contextual support.
 ---
-
-# Microsoft Copilot Studio Integration
-
-Bring the power of Microsoft's enterprise-grade AI into your omnichannel inbox. By connecting your custom Microsoft Copilot Studio agents, you can securely automate complex customer requests, tap into your internal data, and deliver deeply contextual support.
-
-## Key Benefits
-
-- **Enterprise-Ready AI:** Deploy robust, secure, and compliant AI agents backed by Microsoft's trusted infrastructure.
-- **Internal Knowledge Sync:** Allow your Copilot agent to pull answers directly from your internal knowledge bases, SharePoint, and business workflows to resolve customer issues accurately.
-- **Complex Task Automation:** Go beyond simple FAQs. Empower your Copilot to take actions—like booking appointments, checking order statuses, and processing returns—directly within the chat interface.
-- **Seamless Human Handoff:** When an issue requires a human touch, Copilot smoothly escalates the conversation to your team, providing the full transcript and context so agents can pick up right where the AI left off.
-
-Elevate your support experience by combining the versatility of Copilot Studio with your centralized inbox.
