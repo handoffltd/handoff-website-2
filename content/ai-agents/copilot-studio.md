@@ -12,7 +12,7 @@ benefits:
 cta:
   title: Elevate your support experience by combining the versatility of Copilot Studio with your centralized inbox.
 description: Empower your customer service with customized, intelligent agents built in Microsoft Copilot Studio.
-icon: i-simple-icons-microsoft
+icon: i-custom-microsoft
 integration:
   superpower: deep enterprise data integration
   solutionPhrase: secure, business-ready automated workflows

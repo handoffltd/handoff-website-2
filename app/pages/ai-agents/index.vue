@@ -26,7 +26,7 @@ useSeoMeta({
       <UPageBody>
         <UPageGrid>
           <UPageCard v-for="(agent, index) in agents" :key="index" :icon="agent.icon" :title="agent.label"
-            :description="agent.description" :to="agent.path" />
+            :description="agent.description" :to="agent.path" :ui="{ leadingIcon: agent.iconClass || '' }" />
 
           <UPageCard title="🌟 Communication Channels"
             description="Check out the channels compatible with these AI Agents for communication." to="/channels"

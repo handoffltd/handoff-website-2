@@ -49,19 +49,7 @@ const createSectionSchema = () => createBaseSchema().extend({
   features: z.array(createFeatureItemSchema())
 })
 
-// console.log(JSON.stringify(asSeoCollection({
-//   type: 'page',
-//   source: '**/*.md'
-// })))
-
 const collections = {
-  // content: defineCollection(
-  //   // adds the robots frontmatter key to the collection
-  //   asSitemapCollection({
-  //     type: 'page',
-  //     source: '**/*.md'
-  //   })
-  // ),
   index: defineCollection({
     source: 'index.yml',
     type: 'page',
@@ -199,6 +187,7 @@ const collections = {
     type: 'page',
     schema: createBaseSchema().extend({
       icon: z.string().optional(),
+      iconClass: z.string().optional(),
       label: z.string().nonempty(),
       sections: z.array(createSectionSchema()),
       benefits: z.array(createBaseSchema()),
@@ -227,6 +216,7 @@ const collections = {
     type: 'page',
     schema: createBaseSchema().extend({
       icon: z.string().optional(),
+      iconClass: z.string().optional(),
       label: z.string().nonempty(),
       sections: z.array(createSectionSchema()),
       benefits: z.array(createBaseSchema()),

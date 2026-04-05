@@ -2,7 +2,7 @@
 title: "Telegram Conversations, Powered by AI + Humans"
 description: "Secure, fast, and highly customizable messaging for your community."
 label: "Telegram"
-icon: "i-simple-icons-telegram"
+icon: "i-custom-telegram"
 sections:
   - title: Telegram Integration
     description: Tap into a rapidly growing platform known for speed and security. Telegram is the perfect channel for tech-savvy audiences, crypto communities, and businesses that value fast, reliable communication.

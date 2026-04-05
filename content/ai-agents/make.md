@@ -2,7 +2,7 @@
 title: "Power AI + Human Conversations with Make"
 description: "Elevate your customer service by deploying Make AI Agents that dynamically route inquiries, fetch data, and trigger actions across 3,000+ apps."
 label: "Make AI"
-icon: "i-simple-icons-make"
+icon: "i-custom-make"
 sections:
   - title: "Make AI Agents Integration"
     description: "Bring the power of agentic automation into your omnichannel inbox. By integrating Make AI Agents, your customer support can seamlessly perform complex reasoning, dynamically access tools, and update your business systems across 3,000+ apps without rigid, hardcoded routing."

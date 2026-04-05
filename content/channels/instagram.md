@@ -2,7 +2,7 @@
 title: "Instagram Conversations, Powered by AI + Humans"
 description: "Turn your followers into customers with automated, instant direct messaging."
 label: "Instagram"
-icon: "i-simple-icons-instagram"
+icon: "i-custom-instagram"
 sections:
   - title: Instagram Direct Messages
     description: Capitalize on your social media presence. Integrating Instagram Direct Messages (DMs) into your omnichannel inbox ensures that no story reply, mention, or direct inquiry ever goes unnoticed.

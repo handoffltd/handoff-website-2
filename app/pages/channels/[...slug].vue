@@ -36,10 +36,8 @@ const integrations = computed(() => {
       id: `${channelSlug}-with-${agentSlug}`,
       link: `/integrations/${channelSlug}-with-${agentSlug}`,
       title: `${page.label} + ${agent.label}`,
-      channlIcon: page.icon,
-      agentIcon: agent.icon,
-      channelName: page.label,
-      agentName: agent.label,
+      channel: page,
+      agent,
       description: `Use ${agent.label}'s ${agent.integration.superpower} to automate ${page.label} and ${page.integration.actionVerb} ${page.integration.audienceType}.`
     })
   }
@@ -68,7 +66,7 @@ useSeoMeta({
   <div v-if="page">
     <UPageHero :title="page.title" :description="page.description" :ui="{ title: 'mx-auto max-w-4xl' }">
       <template #headline>
-        <UIcon :name="page.icon" class="size-10"></UIcon>
+        <UIcon :name="page.icon" class="size-10" :class="page.iconClass || ''"></UIcon>
       </template>
 
       <HeroChatDemo :platform="pageSlug" />
@@ -98,12 +96,12 @@ useSeoMeta({
             <div class="flex items-center space-x-3">
               <div
                 class="h-10 w-10 bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-lg flex items-center justify-center shadow-inner">
-                <UIcon :name="integration.channlIcon" class="w-6 h-6" />
+                <UIcon :name="integration.channel.icon" class="w-6 h-6" :class="integration.channel.iconClass || ''" />
               </div>
               <UIcon name="i-lucide-arrow-right-left" class="w-4 h-4 text-gray-400" />
               <div
                 class="h-10 w-10 bg-primary-50 dark:bg-primary-900/30 text-primary-600 rounded-lg flex items-center justify-center shadow-inner">
-                <UIcon :name="integration.agentIcon" class="w-6 h-6" />
+                <UIcon :name="integration.agent.icon" class="w-6 h-6" :class="integration.agent.iconClass || ''" />
               </div>
             </div>
           </template>

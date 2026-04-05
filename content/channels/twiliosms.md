@@ -3,6 +3,7 @@ title: "Twilio SMS Conversations, Powered by AI + Humans"
 description: "Reliable, direct text messaging to reach customers offline."
 label: "Twilio SMS"
 icon: "i-simple-icons-twilio"
+iconClass: "text-rose-500"
 sections:
   - title: Twilio SMS Integration
     description: Not every customer uses social media messaging apps, but almost everyone reads their text messages. Integrating Twilio brings the universally accessible power of SMS directly into your omnichannel strategy.

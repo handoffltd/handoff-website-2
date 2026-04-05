@@ -3,6 +3,9 @@
 
 @source "../../../content/**/*";
 
+/* safelist certain classes to always include them */
+@source inline("text-orange-500", "text-rose-500");
+
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
 

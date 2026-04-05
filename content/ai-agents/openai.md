@@ -3,6 +3,7 @@ title: "Power AI + Human Conversations with OpenAI"
 description: "Bring your custom OpenAI instructions to life as autonomous, conversational customer support agents."
 label: "OpenAI"
 icon: "i-simple-icons-openai"
+iconClass: "text-black dark:text-white"
 sections:
   - title: OpenAI Prompt Integration
     description: Turn your carefully crafted OpenAI prompts into fully functioning customer service representatives. Our OpenAI integration allows you to sync your saved prompts directly from your OpenAI console and deploy them across all your messaging channels instantly.

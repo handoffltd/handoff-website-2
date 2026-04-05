@@ -2,7 +2,7 @@
 title: "WhatsApp Conversations, Powered by AI + Humans"
 description: "Engage with your customers on the world's most popular messaging app."
 label: "WhatsApp"
-icon: "i-simple-icons-whatsapp"
+icon: "i-custom-whatsapp"
 sections:
   - title: WhatsApp Integration
     description: Meet your customers exactly where they already spend their time. By integrating WhatsApp with your AI-first inbox, you can deliver instant, personalized support at scale.

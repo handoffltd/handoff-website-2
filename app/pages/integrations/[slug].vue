@@ -122,9 +122,9 @@ const capitalizeFirstLetter = (str: string) => {
     :links="[{ label: `Start Integrating Now`, to: 'https://app.handoff.chat', target: '_blank', icon: 'lucide:rocket', class: 'bg-gradient-to-r from-sky-700 via-purple-600 to-red-600 dark:from-sky-500 dark:via-purple-500 dark:to-red-500 p-3 group text-white dark:text-white rounded-full' }]">
     <template #headline>
       <div class="flex justify-center gap-2">
-        <UIcon :name="channel.icon" class="size-10"></UIcon>
+        <UIcon :name="channel.icon" class="size-10" :class="channel.iconClass || ''"></UIcon>
         <UIcon name="i-lucide-plus" class="size-10"></UIcon>
-        <UIcon :name="agent.icon" class="size-10"></UIcon>
+        <UIcon :name="agent.icon" class="size-10" :class="agent.iconClass || ''"></UIcon>
       </div>
     </template>
 
@@ -196,11 +196,11 @@ const capitalizeFirstLetter = (str: string) => {
       :ui="{ root: 'bg-white/10 dark:bg-black/20 ring ring-white/20', wrapper: 'items-center', leading: 'mb-6', title: 'text-2xl font-bold text-white' }">
       <template #leading>
         <div class="flex items-center justify-center gap-4">
-          <UIcon :name="channel.icon" class="size-10"></UIcon>
+          <UIcon :name="channel.icon" class="size-10" :class="channel.iconClass || ''"></UIcon>
           <UIcon name="i-lucide-arrow-right-left" class="size-7 animate-pulse"></UIcon>
           <img src="/images/handoff-icon-white-bg-trans-256.png" alt="Handoff" class="w-14 h-14 -mt-2" />
           <UIcon name="i-lucide-arrow-right-left" class="size-7 animate-pulse"></UIcon>
-          <UIcon :name="agent.icon" class="size-10"></UIcon>
+          <UIcon :name="agent.icon" class="size-10" :class="agent.iconClass || ''"></UIcon>
         </div>
       </template>
 

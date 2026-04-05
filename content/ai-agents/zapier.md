@@ -3,6 +3,7 @@ title: "Power AI + Human Conversations with Zapier"
 description: "Supercharge your customer support by connecting AI agents that can instantly trigger actions and retrieve data across 6,000+ apps using Zapier."
 label: "Zapier AI"
 icon: "i-simple-icons-zapier"
+iconClass: "text-orange-500"
 sections:
   - title: "Zapier AI Agents & AI by Zapier Integration"
     description: "Transform your omnichannel inbox into a command center. By integrating Zapier AI Agents or AI by Zapier, your automated customer service can securely retrieve live data, trigger cross-platform workflows, and execute tasks across over 6,000 business apps without writing a single line of code."

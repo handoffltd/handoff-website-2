@@ -2,7 +2,7 @@
 title: "Messenger Conversations, Powered by AI + Humans"
 description: "Provide seamless customer service directly through Facebook Messenger."
 label: "Messenger"
-icon: "i-simple-icons-messenger"
+icon: "i-custom-messenger"
 sections:
   - title: Facebook Messenger
     description: Empower your business page with lightning-fast, intelligent conversations. Integrating Facebook Messenger allows you to streamline support and sales for one of the largest social networks on the internet.
