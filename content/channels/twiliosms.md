@@ -8,13 +8,13 @@ sections:
   - title: Twilio SMS Integration
     description: Not every customer uses social media messaging apps, but almost everyone reads their text messages. Integrating Twilio brings the universally accessible power of SMS directly into your omnichannel strategy.
 benefits:
-  - title: Unmatched Open Rates
+  - title: 📩 Unmatched Open Rates
     description: SMS boasts the highest open and read rates of any communication channel, ensuring your critical messages are seen.
-  - title: Universal Accessibility
+  - title: 👐 Universal Accessibility
     description: Reach customers regardless of their smartphone OS, installed apps, or internet connection status.
-  - title: Two-Way Texting
+  - title: 💬 Two-Way Texting
     description: Move beyond simple alerts. Allow customers to text you back with questions, seamlessly handled by your AI agents or human team.
-  - title: Critical Alerts
+  - title: 🚨 Critical Alerts
     description: Perfect for urgent notifications, delivery updates, authentication codes, and time-sensitive promotions.
 cta:
   title: Bridge the gap between digital platforms and traditional mobile communication with our robust Twilio integration.

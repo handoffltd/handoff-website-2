@@ -7,13 +7,13 @@ sections:
   - title: Facebook Messenger
     description: Empower your business page with lightning-fast, intelligent conversations. Integrating Facebook Messenger allows you to streamline support and sales for one of the largest social networks on the internet.
 benefits:
-  - title: Frictionless Support
+  - title: 🪄 Frictionless Support
     description: Customers can reach out directly from your Facebook Page without navigating to a separate contact portal.
-  - title: Intelligent Routing
+  - title: 🧭 Intelligent Routing
     description: Automatically categorize incoming messages and route them to the right human agent or handle them instantly with AI.
-  - title: Rich Conversations
+  - title: 💬 Rich Conversations
     description: Utilize carousels, quick replies, and persistent menus to guide users through troubleshooting or product catalogs.
-  - title: Re-engagement Campaigns
+  - title: 🔄 Re-engagement Campaigns
     description: Send sponsored messages and follow-ups to users who have previously interacted with your page.
 cta:
   title: Turn every Facebook interaction into an opportunity to build loyalty and drive sales.
@@ -29,16 +29,3 @@ integration:
     - "Showcase products using interactive carousel menus."
     - "Transition smoothly from automated chat to live agents."
 ---
-
-# Facebook Messenger
-
-Empower your business page with lightning-fast, intelligent conversations. Integrating Facebook Messenger allows you to streamline support and sales for one of the largest social networks on the internet.
-
-## Key Benefits
-
-* **Frictionless Support:** Customers can reach out directly from your Facebook Page without navigating to a separate contact portal.
-* **Intelligent Routing:** Automatically categorize incoming messages and route them to the right human agent or handle them instantly with AI.
-* **Rich Conversations:** Utilize carousels, quick replies, and persistent menus to guide users through troubleshooting or product catalogs.
-* **Re-engagement Campaigns:** Send sponsored messages and follow-ups to users who have previously interacted with your page.
-
-Turn every Facebook interaction into an opportunity to build loyalty and drive sales.

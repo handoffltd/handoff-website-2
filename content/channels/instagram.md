@@ -7,13 +7,13 @@ sections:
   - title: Instagram Direct Messages
     description: Capitalize on your social media presence. Integrating Instagram Direct Messages (DMs) into your omnichannel inbox ensures that no story reply, mention, or direct inquiry ever goes unnoticed.
 benefits:
-  - title: Capture High-Intent Leads
+  - title: 🎯 Capture High-Intent Leads
     description: Instantly respond to users sliding into your DMs asking about products featured in your latest posts or reels.
-  - title: Automate Story Replies
+  - title: 📲 Automate Story Replies
     description: Use AI to automatically acknowledge and categorize reactions to your stories, building stronger community relationships.
-  - title: Unified Brand Voice
+  - title: 🗣️ Unified Brand Voice
     description: Manage your visual brand's conversational counterpart from the same unified dashboard as your other support channels.
-  - title: Boost Conversions
+  - title: 📈 Boost Conversions
     description: Guide shoppers from discovery to purchase seamlessly within the Instagram app.
 cta:
   title: Don't let your social engagement sit idle—convert comments and DMs into measurable business growth.
@@ -29,16 +29,3 @@ integration:
     - "Guide followers from product discovery to checkout."
     - "Qualify leads directly from your social media profile."
 ---
-
-# Instagram Direct Messages
-
-Capitalize on your social media presence. Integrating Instagram Direct Messages (DMs) into your omnichannel inbox ensures that no story reply, mention, or direct inquiry ever goes unnoticed.
-
-## Key Benefits
-
-* **Capture High-Intent Leads:** Instantly respond to users sliding into your DMs asking about products featured in your latest posts or reels.
-* **Automate Story Replies:** Use AI to automatically acknowledge and categorize reactions to your stories, building stronger community relationships.
-* **Unified Brand Voice:** Manage your visual brand's conversational counterpart from the same unified dashboard as your other support channels.
-* **Boost Conversions:** Guide shoppers from discovery to purchase seamlessly within the Instagram app.
-
-Don't let your social engagement sit idle—convert comments and DMs into measurable business growth.
