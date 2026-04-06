@@ -40,7 +40,7 @@ if (page.value?.faq?.items) {
 <template>
   <div v-if="page">
     <UPageHero :title="page.title" :description="page.description" :links="page.hero.links"
-      :ui="{ title: 'mx-auto max-w-3xl' }">
+      :ui="{ title: 'mx-auto max-w-5xl' }">
       <template #top>
         <StarsBg />
       </template>
@@ -66,7 +66,6 @@ if (page.value?.faq?.items) {
       <div v-if="section.image" :class="[
         section.imageRadiantBg ? 'relative flex p-0.5 overflow-hidden rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.2)]' : ''
       ]">
-
         <div v-if="section.imageRadiantBg"
           class="absolute -inset-full animate-spin [animation-duration:12s] bg-[conic-gradient(red,orange,yellow,green,blue,indigo,violet,red)]">
         </div>
