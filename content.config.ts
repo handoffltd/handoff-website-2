@@ -15,7 +15,8 @@ const createBaseSchema = () => z.object({
 const createFeatureItemSchema = () => createBaseSchema().extend({
   icon: property(z.string().optional()).editor({ input: 'icon' }),
   ui: z.object({
-    leading: z.string().optional()
+    leading: z.string().optional(),
+    leadingIcon: z.string().optional()
   })
 })
 

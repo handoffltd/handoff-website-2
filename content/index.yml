@@ -25,12 +25,18 @@ sections:
       - name: Smart Inbox
         description: Unify conversations from WhatsApp, Instagram, Messenger, Telegram and Text/SMS into one smart inbox.
         icon: i-lucide-inbox
+        ui:
+          leadingIcon: text-emerald-400 dark:text-emerald-300
       - name: AI Agent
         description: Auto reply to your customers using your favorite LLM AI agent.
         icon: i-lucide-bot
+        ui:
+          leadingIcon: text-sky-400 dark:text-sky-300
       - name: Human Agent
         description: Seamless human escalation when conversations need a personal touch.
         icon: i-lucide-user
+        ui:
+          leadingIcon: text-indigo-400 dark:text-indigo-300
 features:
   title: Everything You Need for AI-First Customer Support
   description: Enjoy the freedom to tailor automation to your brand’s voice, adapt to evolving customer needs, and switch providers without being locked in.
@@ -61,22 +67,26 @@ benefits:
       description: Let AI handle FAQs and repetitive questions instantly, freeing your team to focus on complex issues.
       icon: i-lucide-clock
       ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+        leading: dark:bg-accented/50 p-2 rounded-md border border-muted border-dashed
+        leadingIcon: "text-emerald-400 dark:text-emerald-300"
     - title: Delight customers with instant, accurate responses
       description: Provide fast, context‑aware answers across WhatsApp, Messenger, Instagram, and more.
       icon: i-lucide-zap
       ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+        leading: dark:bg-accented/50 p-2 rounded-md border border-muted border-dashed
+        leadingIcon: "text-sky-400 dark:text-sky-300"
     - title: Maintain trust with smooth human handoff when needed
       description: Escalate seamlessly to a human agent for sensitive or high‑value conversations.
       icon: i-lucide-handshake
       ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+        leading: dark:bg-accented/50 p-2 rounded-md border border-muted border-dashed
+        leadingIcon: "text-purple-400 dark:text-purple-300"
     - title: Scale your support without scaling your stress
       description: Grow your business confidently with a system designed to handle more conversations effortlessly.
       icon: i-lucide-trending-up
       ui:
-        leading: bg-accented/50 p-2 rounded-md border border-muted border-dashed
+        leading: dark:bg-accented/50 p-2 rounded-md border border-muted border-dashed
+        leadingIcon: "text-teal-400 dark:text-teal-300"
 steps:
   title: Your Inbox in [3 Simple Steps]{.text-primary}
   description: Getting started is effortless. In just a few minutes, you’ll unify your channels, empower AI, and keep human care at the center of every conversation.

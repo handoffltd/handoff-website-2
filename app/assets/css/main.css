@@ -4,7 +4,17 @@
 @source "../../../content/**/*";
 
 /* safelist certain classes to always include them */
-@source inline("text-orange-500", "text-rose-500");
+@source inline("text-emerald-300",
+  "text-emerald-300",
+  "text-emerald-400",
+  "text-indigo-300",
+  "text-indigo-400",
+  "text-orange-500",
+  "text-sky-300",
+  "text-sky-400",
+  "text-teal-300",
+  "text-teal-400"
+);
 
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
@@ -31,11 +41,11 @@
 
 /* for footer animation */
 @keyframes moving-vehicle {
-    from {
-        margin-left: -25vw;
-    }
+  from {
+    margin-left: -25vw;
+  }
 
-    to {
-        margin-left: 100vw;
-    }
+  to {
+    margin-left: 100vw;
+  }
 }
